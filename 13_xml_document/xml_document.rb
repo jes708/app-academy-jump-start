@@ -25,7 +25,7 @@ class XmlDocument
   end
   
   def attributes(args)
-    args[0].nil? ? "" : args[0].map {|name, value| " #{name}=\"#{value}\""}.join(" ")
+    args[0].nil? ? "" : args[0].map {|name, value| " #{name}=\'#{value}\'"}.join(" ")
   end
   
   def indentation
